@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5003DF82BF0BC8600D1C1A6 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B5003DF72BF0BC8600D1C1A6 /* ComposableArchitecture */; };
+		B5003DFC2BF0BDF500D1C1A6 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */; };
+		B5003E012BF0BE2C00D1C1A6 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003E002BF0BE2C00D1C1A6 /* Color+.swift */; };
+		B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */; };
+		B598EB942BF0F56B00E783DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */; };
+		B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EB952BF0FA2100E783DA /* DividerView.swift */; };
+		B598EB9A2BF0FBC200E783DA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */; };
+		B598EB9B2BF0FBC200E783DA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */; };
+		B598EB9D2BF0FBCB00E783DA /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB9C2BF0FBCB00E783DA /* Pretendard-Medium.otf */; };
+		B598EB9F2BF0FBD800E783DA /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB9E2BF0FBD800E783DA /* Pretendard-Regular.otf */; };
+		B598EBA02BF0FBD800E783DA /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB9E2BF0FBD800E783DA /* Pretendard-Regular.otf */; };
+		B598EBA12BF0FBDB00E783DA /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB9C2BF0FBCB00E783DA /* Pretendard-Medium.otf */; };
+		B598EBA32BF0FBE900E783DA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */; };
+		B598EBA42BF0FBE900E783DA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */; };
+		B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EBA62BF0FC6D00E783DA /* Font+.swift */; };
+		B598EBA82BF0FC6D00E783DA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EBA62BF0FC6D00E783DA /* Font+.swift */; };
 		B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDF1E42BD517610094CB59 /* STLessApp.swift */; };
-		B5EDF1E72BD517610094CB59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDF1E62BD517610094CB59 /* ContentView.swift */; };
 		B5EDF1E92BD517620094CB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EDF1E82BD517620094CB59 /* Assets.xcassets */; };
 		B5EDF1ED2BD517620094CB59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EDF1EC2BD517620094CB59 /* Preview Assets.xcassets */; };
 		B5EDF2072BD518DA0094CB59 /* STLess_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDF2062BD518DA0094CB59 /* STLess_WatchApp.swift */; };
@@ -43,9 +58,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
+		B5003E002BF0BE2C00D1C1A6 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBox.swift; sourceTree = "<group>"; };
+		B598EB952BF0FA2100E783DA /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		B598EB9C2BF0FBCB00E783DA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		B598EB9E2BF0FBD800E783DA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		B598EBA52BF0FBFD00E783DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B598EBA62BF0FC6D00E783DA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 		B5EDF1E12BD517610094CB59 /* STLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EDF1E42BD517610094CB59 /* STLessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLessApp.swift; sourceTree = "<group>"; };
-		B5EDF1E62BD517610094CB59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5EDF1E82BD517620094CB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5EDF1EA2BD517620094CB59 /* STLess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = STLess.entitlements; sourceTree = "<group>"; };
 		B5EDF1EC2BD517620094CB59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -62,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5003DF82BF0BC8600D1C1A6 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +101,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5003DF62BF0BC8600D1C1A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5003DF92BF0BDE300D1C1A6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */,
+				B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5003DFD2BF0BE0B00D1C1A6 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B5003E022BF0BE4F00D1C1A6 /* Components */,
+				B5003DFF2BF0BE1C00D1C1A6 /* Extension */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		B5003DFF2BF0BE1C00D1C1A6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5003E002BF0BE2C00D1C1A6 /* Color+.swift */,
+				B598EBA62BF0FC6D00E783DA /* Font+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5003E022BF0BE4F00D1C1A6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */,
+				B598EB952BF0FA2100E783DA /* DividerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B532C5202BF0B97400A38001 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B5003DF92BF0BDE300D1C1A6 /* Main */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		B598EB972BF0FB8E00E783DA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B598EB982BF0FBA400E783DA /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B598EB982BF0FBA400E783DA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B598EB9C2BF0FBCB00E783DA /* Pretendard-Medium.otf */,
+				B598EB9E2BF0FBD800E783DA /* Pretendard-Regular.otf */,
+				B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */,
+				B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B5EDF1D82BD517610094CB59 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +178,7 @@
 				B5EDF2052BD518DA0094CB59 /* STLess_Watch App */,
 				B5EDF1F32BD517A40094CB59 /* README.md */,
 				B5EDF1E22BD517610094CB59 /* Products */,
+				B5003DF62BF0BC8600D1C1A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +194,11 @@
 		B5EDF1E32BD517610094CB59 /* STLess */ = {
 			isa = PBXGroup;
 			children = (
+				B598EBA52BF0FBFD00E783DA /* Info.plist */,
+				B598EB972BF0FB8E00E783DA /* Resource */,
+				B5003DFD2BF0BE0B00D1C1A6 /* DesignSystem */,
+				B532C5202BF0B97400A38001 /* Scene */,
 				B5EDF1E42BD517610094CB59 /* STLessApp.swift */,
-				B5EDF1E62BD517610094CB59 /* ContentView.swift */,
 				B5EDF1E82BD517620094CB59 /* Assets.xcassets */,
 				B5EDF1EA2BD517620094CB59 /* STLess.entitlements */,
 				B5EDF1EB2BD517620094CB59 /* Preview Content */,
@@ -151,6 +251,9 @@
 				B5EDF2102BD518DB0094CB59 /* PBXTargetDependency */,
 			);
 			name = STLess;
+			packageProductDependencies = (
+				B5003DF72BF0BC8600D1C1A6 /* ComposableArchitecture */,
+			);
 			productName = STLess;
 			productReference = B5EDF1E12BD517610094CB59 /* STLess.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +302,9 @@
 				Base,
 			);
 			mainGroup = B5EDF1D82BD517610094CB59;
+			packageReferences = (
+				B532C5232BF0B9EB00A38001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B5EDF1E22BD517610094CB59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -215,7 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5EDF1ED2BD517620094CB59 /* Preview Assets.xcassets in Resources */,
+				B598EB9A2BF0FBC200E783DA /* Pretendard-Bold.otf in Resources */,
+				B598EB9F2BF0FBD800E783DA /* Pretendard-Regular.otf in Resources */,
+				B598EBA32BF0FBE900E783DA /* Pretendard-SemiBold.otf in Resources */,
 				B5EDF1E92BD517620094CB59 /* Assets.xcassets in Resources */,
+				B598EB9D2BF0FBCB00E783DA /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5EDF20E2BD518DB0094CB59 /* Preview Assets.xcassets in Resources */,
+				B598EBA12BF0FBDB00E783DA /* Pretendard-Medium.otf in Resources */,
+				B598EBA02BF0FBD800E783DA /* Pretendard-Regular.otf in Resources */,
+				B598EBA42BF0FBE900E783DA /* Pretendard-SemiBold.otf in Resources */,
+				B598EB9B2BF0FBC200E783DA /* Pretendard-Bold.otf in Resources */,
 				B5EDF20B2BD518DB0094CB59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,7 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EDF1E72BD517610094CB59 /* ContentView.swift in Sources */,
+				B598EB942BF0F56B00E783DA /* MainView.swift in Sources */,
+				B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */,
+				B5003E012BF0BE2C00D1C1A6 /* Color+.swift in Sources */,
+				B5003DFC2BF0BDF500D1C1A6 /* MainFeature.swift in Sources */,
+				B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */,
+				B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */,
 				B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B598EBA82BF0FC6D00E783DA /* Font+.swift in Sources */,
 				B5EDF2092BD518DA0094CB59 /* ContentView.swift in Sources */,
 				B5EDF2072BD518DA0094CB59 /* STLess_WatchApp.swift in Sources */,
 			);
@@ -312,12 +432,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -367,10 +489,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -388,6 +512,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = STLess/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "st:less";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -399,11 +525,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.STLess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -429,6 +555,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = STLess/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "st:less";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -440,11 +568,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.STLess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -474,7 +602,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.STLess.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -482,7 +610,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -504,7 +632,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.STLess.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -513,7 +641,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -548,6 +676,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B532C5232BF0B9EB00A38001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5003DF72BF0BC8600D1C1A6 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B532C5232BF0B9EB00A38001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5EDF1D92BD517610094CB59 /* Project object */;
 }
