@@ -18,14 +18,17 @@ struct InfoBox: View {
             Text(title)
                 .font(.pdMedium13)
                 .foregroundStyle(Color.black).opacity(0.7)
-            HStack {
-                Text("\(value)")
-                    .font(.pdSemiBold24)
-                    .foregroundStyle(Color.black).opacity(0.9)
-                Text(unit)
-                    .font(.pdMedium11)
-                    .foregroundStyle(Color.black).opacity(0.5)
-            }
+            Text("\(value)")
+                .font(.pdSemiBold24)
+                .foregroundStyle(Color.black).opacity(0.9)
+                .overlay(alignment: .bottomTrailing) {
+                    Text(unit)
+                        .font(.pdMedium11)
+                        .foregroundStyle(Color.black).opacity(0.5)
+                        .offset(x: 18, y: -3)
+                }
+                .padding(.top, 1)
+            
         }
         .frame(maxWidth: .infinity)
         .padding(14)

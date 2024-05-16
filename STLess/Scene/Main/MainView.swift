@@ -7,8 +7,11 @@
 
 import SwiftUI
 import ComposableArchitecture
+import Charts
 
 struct MainView: View {
+    var data = [1,2,4,3]
+    @State var dateType = DateType.daily
     
     var body: some View {
         ScrollView {
@@ -60,7 +63,7 @@ struct MainView: View {
             
             HStack {
                 Spacer()
-                Text("잠깐 심박변이가 뭐에요?")
+                Text("잠깐! 심박변이가 뭐에요?")
                     .font(.pdMedium12)
                     .foregroundStyle(Color.black).opacity(0.7)
             }
@@ -82,14 +85,28 @@ struct MainView: View {
                 Color.gray
                     .frame(width: 20, height: 20)
             }
-            
-            Color.gray
-                .frame(height: 47)
-            
-            Color.gray
-                .frame(height: 196)
-                .padding(.top, 40)
-                .padding(.bottom, 20)
+
+            Picker("date", selection: $dateType) {
+                ForEach(DateType.allCases, id: \.self) {
+                    Text($0.name)
+                }
+            }
+            .background { Color.main }
+            .pickerStyle(.segmented)
+            .frame(height: 47)
+            .padding(.top, 25)
+                
+            switch dateType {
+            case .daily:
+                LineChart()
+            case .weekly:
+                BarChart()
+                    .padding(.top, 40)
+            case .monthly:
+                Color.red
+                    .frame(width: 300, height: 196)
+                    .padding()
+            }
         }
         .padding(.horizontal, 20)
     }
