@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DateType: CaseIterable {
+enum DateType: CaseIterable, Equatable {
     case daily
     case weekly
     case monthly

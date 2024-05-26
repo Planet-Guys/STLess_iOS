@@ -11,6 +11,7 @@
 		B5003DFC2BF0BDF500D1C1A6 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */; };
 		B5003E012BF0BE2C00D1C1A6 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003E002BF0BE2C00D1C1A6 /* Color+.swift */; };
 		B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */; };
+		B53217DE2BF9BBBE006C316C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53217DD2BF9BBBE006C316C /* HealthManager.swift */; };
 		B544335B2BF4900200CE532F /* DateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544335A2BF4900200CE532F /* DateType.swift */; };
 		B544335D2BF4C1D000CE532F /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544335C2BF4C1D000CE532F /* BarChart.swift */; };
 		B544335F2BF4C1F100CE532F /* HrvData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544335E2BF4C1F100CE532F /* HrvData.swift */; };
@@ -29,6 +30,9 @@
 		B598EBA42BF0FBE900E783DA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */; };
 		B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EBA62BF0FC6D00E783DA /* Font+.swift */; };
 		B598EBA82BF0FC6D00E783DA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EBA62BF0FC6D00E783DA /* Font+.swift */; };
+		B5BDCAAD2BFA16FA0097BA96 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAAC2BFA16FA0097BA96 /* Date+.swift */; };
+		B5BDCAAF2BFA269D0097BA96 /* DailyHRVInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAAE2BFA269D0097BA96 /* DailyHRVInfo.swift */; };
+		B5BDCAB12BFA68D80097BA96 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAB02BFA68D80097BA96 /* Utils.swift */; };
 		B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDF1E42BD517610094CB59 /* STLessApp.swift */; };
 		B5EDF1E92BD517620094CB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EDF1E82BD517620094CB59 /* Assets.xcassets */; };
 		B5EDF1ED2BD517620094CB59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EDF1EC2BD517620094CB59 /* Preview Assets.xcassets */; };
@@ -68,6 +72,8 @@
 		B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
 		B5003E002BF0BE2C00D1C1A6 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBox.swift; sourceTree = "<group>"; };
+		B53217DD2BF9BBBE006C316C /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		B53217DF2BF9BC46006C316C /* STLess_Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "STLess_Watch App.entitlements"; sourceTree = "<group>"; };
 		B544335A2BF4900200CE532F /* DateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateType.swift; sourceTree = "<group>"; };
 		B544335C2BF4C1D000CE532F /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		B544335E2BF4C1F100CE532F /* HrvData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrvData.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 		B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		B598EBA52BF0FBFD00E783DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B598EBA62BF0FC6D00E783DA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		B5BDCAAC2BFA16FA0097BA96 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		B5BDCAAE2BFA269D0097BA96 /* DailyHRVInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHRVInfo.swift; sourceTree = "<group>"; };
+		B5BDCAB02BFA68D80097BA96 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B5EDF1E12BD517610094CB59 /* STLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EDF1E42BD517610094CB59 /* STLessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLessApp.swift; sourceTree = "<group>"; };
 		B5EDF1E82BD517620094CB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +169,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		B53217DC2BF9BBB6006C316C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B53217DD2BF9BBBE006C316C /* HealthManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		B532C5202BF0B97400A38001 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +190,7 @@
 			children = (
 				B54433592BF48FE300CE532F /* Enum */,
 				B544335E2BF4C1F100CE532F /* HrvData.swift */,
+				B5BDCAAE2BFA269D0097BA96 /* DailyHRVInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +222,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B5BDCAAA2BFA16EC0097BA96 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5BDCAAB2BFA16F30097BA96 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5BDCAAB2BFA16F30097BA96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5BDCAAC2BFA16FA0097BA96 /* Date+.swift */,
+				B5BDCAB02BFA68D80097BA96 /* Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B5EDF1D82BD517610094CB59 = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +262,8 @@
 		B5EDF1E32BD517610094CB59 /* STLess */ = {
 			isa = PBXGroup;
 			children = (
+				B5BDCAAA2BFA16EC0097BA96 /* Utils */,
+				B53217DC2BF9BBB6006C316C /* Core */,
 				B54433582BF48FD100CE532F /* Models */,
 				B598EBA52BF0FBFD00E783DA /* Info.plist */,
 				B598EB972BF0FB8E00E783DA /* Resource */,
@@ -251,6 +288,7 @@
 		B5EDF2052BD518DA0094CB59 /* STLess_Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				B53217DF2BF9BC46006C316C /* STLess_Watch App.entitlements */,
 				B5EDF2062BD518DA0094CB59 /* STLess_WatchApp.swift */,
 				B5EDF2082BD518DA0094CB59 /* ContentView.swift */,
 				B5EDF20A2BD518DB0094CB59 /* Assets.xcassets */,
@@ -392,10 +430,14 @@
 				B54433612BF4C3D600CE532F /* UISegment.swift in Sources */,
 				B5003DFC2BF0BDF500D1C1A6 /* MainFeature.swift in Sources */,
 				B54433652BF4CDD700CE532F /* View+.swift in Sources */,
+				B5BDCAB12BFA68D80097BA96 /* Utils.swift in Sources */,
 				B54433632BF4C96700CE532F /* LineChart.swift in Sources */,
 				B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */,
 				B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */,
+				B5BDCAAF2BFA269D0097BA96 /* DailyHRVInfo.swift in Sources */,
+				B5BDCAAD2BFA16FA0097BA96 /* Date+.swift in Sources */,
 				B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */,
+				B53217DE2BF9BBBE006C316C /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +597,8 @@
 				INFOPLIST_FILE = STLess/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "st:less";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "심박변이수를 받아오기 위해 건강정보를 공유합니다.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "스트레스지수를 계산하기 위해 건강정보를 업데이트합니다.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -598,6 +642,8 @@
 				INFOPLIST_FILE = STLess/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "st:less";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "심박변이수를 받아오기 위해 건강정보를 공유합니다.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "스트레스지수를 계산하기 위해 건강정보를 업데이트합니다.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -629,6 +675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "STLess_Watch App/STLess_Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STLess_Watch App/Preview Content\"";
@@ -659,6 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "STLess_Watch App/STLess_Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STLess_Watch App/Preview Content\"";

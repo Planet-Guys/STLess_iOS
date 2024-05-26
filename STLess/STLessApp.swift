@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct STLessApp: App {
+    
+    init() {
+        HealthManager.share.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(
+                store: Store(initialState: MainFeature.State()) {
+                    MainFeature()
+                }
+            )
         }
     }
 }

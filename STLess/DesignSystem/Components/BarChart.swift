@@ -9,51 +9,63 @@ import SwiftUI
 import Charts
 
 struct BarChart: View {
-    let items: [HrvData] = [
-        HrvData(hour: "00", hrv: 20),
-        HrvData(hour: "03", hrv: 40),
-        HrvData(hour: "06", hrv: 60),
-        HrvData(hour: "09", hrv: 120),
-        HrvData(hour: "12", hrv: 43),
-        HrvData(hour: "15", hrv: 50),
-        HrvData(hour: "18", hrv: 44),
-        HrvData(hour: "21", hrv: 60),
-        HrvData(hour: "24", hrv: 80),
-    ]
+    let items: [DailySDNNInfo]
     
     var body: some View {
         Chart(items) { item in
             BarMark(
-                x: .value("hour", item.hour),
-                y: .value("hrv", item.hrv),
-                width: .fixed(24),
+                x: .value("hour", item.date.formatted(.dateTime.hour())),
+                y: .value("hrv", item.sdnn),
+                width: .fixed(20),
                 height: .automatic,
                 stacking: .unstacked
             )
-            .cornerRadius(6, style: .circular)
+            .cornerRadius(2, style: .circular)
             .annotation(position: .top) {
-                Text("\(item.hrv)")
+                Text("\(item.sdnn)")
                     .font(.caption)
                     .foregroundColor(.black)
             }
+            .foregroundStyle(color(for: item.sdnn))
         }
         .frame(height: 196)
         .chartYScale(domain: 0...150)
+        .chartXScale(domain: xScaleDomain)
         .chartYAxis {
-            AxisMarks(position: .leading) { _ in
-                AxisGridLine().foregroundStyle(.main)
-                AxisValueLabel(horizontalSpacing: .zero,
-                               verticalSpacing: .zero)
+            AxisMarks(position: .leading, values: [0, 25, 50, 75, 100, 125]) {
+                AxisGridLine()
+                    .foregroundStyle(Color.black.opacity(0.3))
+                AxisValueLabel()
+                    .foregroundStyle(Color.black.opacity(0.3))
             }
         }
         .chartXAxis {
-            AxisMarks(position: .bottom) { _ in
-                AxisValueLabel(horizontalSpacing: .zero,
-                               verticalSpacing: .zero)
+            AxisMarks(values: ["00","03","06","09","12","15","18","21"]) {
+                AxisValueLabel(centered: true)
+                    .foregroundStyle(.black.opacity(0.3))
             }
         }
-        .if(items.count > 12, content: {
-            $0.chartScrollableAxes(.horizontal)
-        })
+        .chartScrollableAxes(.horizontal)
+    }
+    
+    func color(for yValue: Double) -> Color {
+        switch yValue {
+        case 0...10:
+            return .bad
+        case 11...30:
+            return .caution
+        case 31...60:
+            return .normal
+        default:
+            return .good
+        }
     }
 }
+
+
+extension BarChart {
+    var xScaleDomain: [String] {
+        return (0..<24).map { String(format: "%02d", $0) }
+    }
+}
+
