@@ -10,17 +10,19 @@ import ComposableArchitecture
 
 @main
 struct STLessApp: App {
+    let store = Store(initialState: RootFeature.State.init(), reducer: {
+        RootFeature()
+    })
     
     init() {
         HealthManager.share.configure()
     }
+    
     var body: some Scene {
         WindowGroup {
-            MainView(
-                store: Store(initialState: MainFeature.State()) {
-                    MainFeature()
-                }
-            )
+            NavigationStack {
+                RootView(store: store)
+            }
         }
     }
 }

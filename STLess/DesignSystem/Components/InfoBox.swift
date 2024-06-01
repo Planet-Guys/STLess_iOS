@@ -18,14 +18,15 @@ struct InfoBox: View {
             Text(title)
                 .font(.pdMedium13)
                 .foregroundStyle(Color.black).opacity(0.7)
-            Text("\(value)")
+            Text(value == 0 ? "-" : "\(value)")
                 .font(.pdSemiBold24)
                 .foregroundStyle(Color.black).opacity(0.9)
                 .overlay(alignment: .bottomTrailing) {
                     Text(unit)
                         .font(.pdMedium11)
+                        .fixedSize()
                         .foregroundStyle(Color.black).opacity(0.5)
-                        .offset(x: 18, y: -3)
+                        .offset(x: 20, y: -3)
                 }
                 .padding(.top, 1)
             
@@ -38,5 +39,5 @@ struct InfoBox: View {
 }
 
 #Preview {
-    InfoBox(title: "타이틀", value: 12, unit: "ms")
+    InfoBox(title: "타이틀", value: 0, unit: "ms")
 }

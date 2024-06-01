@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 
 struct BarChart: View {
-    let items: [DailySDNNInfo]
+    let items: [DailyHRVInfo]
     
     var body: some View {
         Chart(items) { item in

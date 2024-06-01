@@ -18,6 +18,13 @@
 		B54433612BF4C3D600CE532F /* UISegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54433602BF4C3D600CE532F /* UISegment.swift */; };
 		B54433632BF4C96700CE532F /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54433622BF4C96700CE532F /* LineChart.swift */; };
 		B54433652BF4CDD700CE532F /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54433642BF4CDD700CE532F /* View+.swift */; };
+		B546E4DA2C0AEBAB00FA5AED /* MainFeature+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4D92C0AEBAB00FA5AED /* MainFeature+Destination.swift */; };
+		B546E4DD2C0AF0CA00FA5AED /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4DC2C0AF0CA00FA5AED /* RootFeature.swift */; };
+		B546E4DF2C0AF14F00FA5AED /* MainDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4DE2C0AF14F00FA5AED /* MainDestination.swift */; };
+		B546E4E22C0AF25500FA5AED /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4E12C0AF25500FA5AED /* SplashView.swift */; };
+		B546E4E42C0B059900FA5AED /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4E32C0B059900FA5AED /* RootView.swift */; };
+		B546E4E62C0B066400FA5AED /* SplashFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4E52C0B066400FA5AED /* SplashFeature.swift */; };
+		B546E4EB2C0B0DFF00FA5AED /* SettingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4EA2C0B0DFF00FA5AED /* SettingFeature.swift */; };
 		B598EB942BF0F56B00E783DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */; };
 		B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EB952BF0FA2100E783DA /* DividerView.swift */; };
 		B598EB9A2BF0FBC200E783DA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */; };
@@ -30,9 +37,16 @@
 		B598EBA42BF0FBE900E783DA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */; };
 		B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EBA62BF0FC6D00E783DA /* Font+.swift */; };
 		B598EBA82BF0FC6D00E783DA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EBA62BF0FC6D00E783DA /* Font+.swift */; };
-		B5BDCAAD2BFA16FA0097BA96 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAAC2BFA16FA0097BA96 /* Date+.swift */; };
+		B5BDCAAD2BFA16FA0097BA96 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAAC2BFA16FA0097BA96 /* Date+Format.swift */; };
 		B5BDCAAF2BFA269D0097BA96 /* DailyHRVInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAAE2BFA269D0097BA96 /* DailyHRVInfo.swift */; };
 		B5BDCAB12BFA68D80097BA96 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDCAB02BFA68D80097BA96 /* Utils.swift */; };
+		B5C0CA1B2C039D8F0017BD1B /* StressLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CA1A2C039D8F0017BD1B /* StressLevel.swift */; };
+		B5C0CA1D2C03A0120017BD1B /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CA1C2C03A0120017BD1B /* Double+.swift */; };
+		B5C0CA1F2C03A26A0017BD1B /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CA1E2C03A26A0017BD1B /* Image+.swift */; };
+		B5C0CA2D2C04CA4B0017BD1B /* HRVDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CA2C2C04CA4B0017BD1B /* HRVDescriptionView.swift */; };
+		B5C0CA2F2C04DA400017BD1B /* OverlayToolTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CA2E2C04DA400017BD1B /* OverlayToolTip.swift */; };
+		B5C0CB732C062ED00017BD1B /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CB722C062ED00017BD1B /* DateFormat.swift */; };
+		B5C0CB752C062FF70017BD1B /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0CB742C062FF70017BD1B /* Date+.swift */; };
 		B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDF1E42BD517610094CB59 /* STLessApp.swift */; };
 		B5EDF1E92BD517620094CB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EDF1E82BD517620094CB59 /* Assets.xcassets */; };
 		B5EDF1ED2BD517620094CB59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EDF1EC2BD517620094CB59 /* Preview Assets.xcassets */; };
@@ -80,16 +94,30 @@
 		B54433602BF4C3D600CE532F /* UISegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegment.swift; sourceTree = "<group>"; };
 		B54433622BF4C96700CE532F /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		B54433642BF4CDD700CE532F /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		B546E4D92C0AEBAB00FA5AED /* MainFeature+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainFeature+Destination.swift"; sourceTree = "<group>"; };
+		B546E4DC2C0AF0CA00FA5AED /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		B546E4DE2C0AF14F00FA5AED /* MainDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDestination.swift; sourceTree = "<group>"; };
+		B546E4E12C0AF25500FA5AED /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B546E4E32C0B059900FA5AED /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B546E4E52C0B066400FA5AED /* SplashFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFeature.swift; sourceTree = "<group>"; };
+		B546E4EA2C0B0DFF00FA5AED /* SettingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFeature.swift; sourceTree = "<group>"; };
 		B598EB952BF0FA2100E783DA /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		B598EB9C2BF0FBCB00E783DA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		B598EB9E2BF0FBD800E783DA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		B598EBA22BF0FBE900E783DA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		B598EBA52BF0FBFD00E783DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B598EBA52BF0FBFD00E783DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B598EBA62BF0FC6D00E783DA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
-		B5BDCAAC2BFA16FA0097BA96 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		B5BDCAAC2BFA16FA0097BA96 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		B5BDCAAE2BFA269D0097BA96 /* DailyHRVInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHRVInfo.swift; sourceTree = "<group>"; };
 		B5BDCAB02BFA68D80097BA96 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B5C0CA1A2C039D8F0017BD1B /* StressLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevel.swift; sourceTree = "<group>"; };
+		B5C0CA1C2C03A0120017BD1B /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		B5C0CA1E2C03A26A0017BD1B /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
+		B5C0CA2C2C04CA4B0017BD1B /* HRVDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVDescriptionView.swift; sourceTree = "<group>"; };
+		B5C0CA2E2C04DA400017BD1B /* OverlayToolTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayToolTip.swift; sourceTree = "<group>"; };
+		B5C0CB722C062ED00017BD1B /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		B5C0CB742C062FF70017BD1B /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		B5EDF1E12BD517610094CB59 /* STLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EDF1E42BD517610094CB59 /* STLessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLessApp.swift; sourceTree = "<group>"; };
 		B5EDF1E82BD517620094CB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +160,7 @@
 		B5003DF92BF0BDE300D1C1A6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B546E4EC2C0B1CA100FA5AED /* New Group */,
 				B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */,
 				B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */,
 			);
@@ -161,6 +190,7 @@
 		B5003E022BF0BE4F00D1C1A6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B5C0CA2E2C04DA400017BD1B /* OverlayToolTip.swift */,
 				B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */,
 				B598EB952BF0FA2100E783DA /* DividerView.swift */,
 				B544335C2BF4C1D000CE532F /* BarChart.swift */,
@@ -172,17 +202,24 @@
 		B53217DC2BF9BBB6006C316C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B5BDCAAA2BFA16EC0097BA96 /* Utils */,
+				B5BDCAAB2BFA16F30097BA96 /* Extensions */,
 				B53217DD2BF9BBBE006C316C /* HealthManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		B532C5202BF0B97400A38001 /* Scene */ = {
+		B532C5202BF0B97400A38001 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				B546E4E72C0B0DE800FA5AED /* Settings */,
+				B546E4E02C0AF24C00FA5AED /* Splash */,
+				B546E4D82C0AEB9600FA5AED /* Destination */,
+				B5C0CA2B2C04CA3C0017BD1B /* Description */,
 				B5003DF92BF0BDE300D1C1A6 /* Main */,
+				B546E4E32C0B059900FA5AED /* RootView.swift */,
 			);
-			path = Scene;
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		B54433582BF48FD100CE532F /* Models */ = {
@@ -199,8 +236,54 @@
 			isa = PBXGroup;
 			children = (
 				B544335A2BF4900200CE532F /* DateType.swift */,
+				B5C0CA1A2C039D8F0017BD1B /* StressLevel.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		B546E4D82C0AEB9600FA5AED /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				B546E4D92C0AEBAB00FA5AED /* MainFeature+Destination.swift */,
+			);
+			path = Destination;
+			sourceTree = "<group>";
+		};
+		B546E4DB2C0AEFED00FA5AED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDF1E82BD517620094CB59 /* Assets.xcassets */,
+				B5EDF1EA2BD517620094CB59 /* STLess.entitlements */,
+				B598EBA52BF0FBFD00E783DA /* Info.plist */,
+				B546E4DE2C0AF14F00FA5AED /* MainDestination.swift */,
+				B5EDF1E42BD517610094CB59 /* STLessApp.swift */,
+				B546E4DC2C0AF0CA00FA5AED /* RootFeature.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B546E4E02C0AF24C00FA5AED /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B546E4E12C0AF25500FA5AED /* SplashView.swift */,
+				B546E4E52C0B066400FA5AED /* SplashFeature.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B546E4E72C0B0DE800FA5AED /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B546E4EA2C0B0DFF00FA5AED /* SettingFeature.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B546E4EC2C0B1CA100FA5AED /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		B598EB972BF0FB8E00E783DA /* Resource */ = {
@@ -225,7 +308,7 @@
 		B5BDCAAA2BFA16EC0097BA96 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B5BDCAAB2BFA16F30097BA96 /* Extensions */,
+				B5C0CB722C062ED00017BD1B /* DateFormat.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,10 +316,21 @@
 		B5BDCAAB2BFA16F30097BA96 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B5BDCAAC2BFA16FA0097BA96 /* Date+.swift */,
+				B5BDCAAC2BFA16FA0097BA96 /* Date+Format.swift */,
 				B5BDCAB02BFA68D80097BA96 /* Utils.swift */,
+				B5C0CA1C2C03A0120017BD1B /* Double+.swift */,
+				B5C0CA1E2C03A26A0017BD1B /* Image+.swift */,
+				B5C0CB742C062FF70017BD1B /* Date+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5C0CA2B2C04CA3C0017BD1B /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0CA2C2C04CA4B0017BD1B /* HRVDescriptionView.swift */,
+			);
+			path = Description;
 			sourceTree = "<group>";
 		};
 		B5EDF1D82BD517610094CB59 = {
@@ -262,16 +356,12 @@
 		B5EDF1E32BD517610094CB59 /* STLess */ = {
 			isa = PBXGroup;
 			children = (
-				B5BDCAAA2BFA16EC0097BA96 /* Utils */,
+				B546E4DB2C0AEFED00FA5AED /* App */,
 				B53217DC2BF9BBB6006C316C /* Core */,
 				B54433582BF48FD100CE532F /* Models */,
-				B598EBA52BF0FBFD00E783DA /* Info.plist */,
 				B598EB972BF0FB8E00E783DA /* Resource */,
 				B5003DFD2BF0BE0B00D1C1A6 /* DesignSystem */,
-				B532C5202BF0B97400A38001 /* Scene */,
-				B5EDF1E42BD517610094CB59 /* STLessApp.swift */,
-				B5EDF1E82BD517620094CB59 /* Assets.xcassets */,
-				B5EDF1EA2BD517620094CB59 /* STLess.entitlements */,
+				B532C5202BF0B97400A38001 /* Screen */,
 				B5EDF1EB2BD517620094CB59 /* Preview Content */,
 			);
 			path = STLess;
@@ -423,20 +513,34 @@
 			files = (
 				B598EB942BF0F56B00E783DA /* MainView.swift in Sources */,
 				B544335D2BF4C1D000CE532F /* BarChart.swift in Sources */,
+				B546E4DF2C0AF14F00FA5AED /* MainDestination.swift in Sources */,
 				B544335B2BF4900200CE532F /* DateType.swift in Sources */,
+				B546E4EB2C0B0DFF00FA5AED /* SettingFeature.swift in Sources */,
 				B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */,
+				B546E4DD2C0AF0CA00FA5AED /* RootFeature.swift in Sources */,
+				B546E4E42C0B059900FA5AED /* RootView.swift in Sources */,
 				B544335F2BF4C1F100CE532F /* HrvData.swift in Sources */,
 				B5003E012BF0BE2C00D1C1A6 /* Color+.swift in Sources */,
+				B546E4E62C0B066400FA5AED /* SplashFeature.swift in Sources */,
+				B5C0CA2F2C04DA400017BD1B /* OverlayToolTip.swift in Sources */,
 				B54433612BF4C3D600CE532F /* UISegment.swift in Sources */,
+				B5C0CB732C062ED00017BD1B /* DateFormat.swift in Sources */,
 				B5003DFC2BF0BDF500D1C1A6 /* MainFeature.swift in Sources */,
+				B5C0CA2D2C04CA4B0017BD1B /* HRVDescriptionView.swift in Sources */,
+				B546E4E22C0AF25500FA5AED /* SplashView.swift in Sources */,
 				B54433652BF4CDD700CE532F /* View+.swift in Sources */,
 				B5BDCAB12BFA68D80097BA96 /* Utils.swift in Sources */,
 				B54433632BF4C96700CE532F /* LineChart.swift in Sources */,
 				B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */,
+				B5C0CB752C062FF70017BD1B /* Date+.swift in Sources */,
 				B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */,
+				B546E4DA2C0AEBAB00FA5AED /* MainFeature+Destination.swift in Sources */,
 				B5BDCAAF2BFA269D0097BA96 /* DailyHRVInfo.swift in Sources */,
-				B5BDCAAD2BFA16FA0097BA96 /* Date+.swift in Sources */,
+				B5BDCAAD2BFA16FA0097BA96 /* Date+Format.swift in Sources */,
+				B5C0CA1D2C03A0120017BD1B /* Double+.swift in Sources */,
 				B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */,
+				B5C0CA1F2C03A26A0017BD1B /* Image+.swift in Sources */,
+				B5C0CA1B2C039D8F0017BD1B /* StressLevel.swift in Sources */,
 				B53217DE2BF9BBBE006C316C /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,7 +690,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = STLess/STLess.entitlements;
+				CODE_SIGN_ENTITLEMENTS = STLess/App/STLess.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STLess/Preview Content\"";
@@ -594,7 +698,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = STLess/Info.plist;
+				INFOPLIST_FILE = STLess/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "st:less";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "심박변이수를 받아오기 위해 건강정보를 공유합니다.";
@@ -631,7 +735,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = STLess/STLess.entitlements;
+				CODE_SIGN_ENTITLEMENTS = STLess/App/STLess.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STLess/Preview Content\"";
@@ -639,7 +743,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = STLess/Info.plist;
+				INFOPLIST_FILE = STLess/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "st:less";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "심박변이수를 받아오기 위해 건강정보를 공유합니다.";

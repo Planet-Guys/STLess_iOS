@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailySDNNInfo: Identifiable, Equatable {
+struct DailyHRVInfo: Identifiable, Equatable {
     let date: Date
     let sdnn: Double
     

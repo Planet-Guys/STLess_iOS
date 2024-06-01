@@ -22,4 +22,26 @@ enum DateType: CaseIterable, Equatable {
             "월별"
         }
     }
+    
+    var period: Int {
+        switch self {
+        case .daily:
+            return 1
+        case .weekly:
+            return 7
+        case .monthly:
+            return 0
+        }
+    }
+    
+    var interval: DateComponents {
+        switch self {
+        case .daily:
+            DateComponents(hour: 1)
+        case .weekly:
+            DateComponents(day: 1)
+        case .monthly:
+            DateComponents(day: 1)
+        }
+    }
 }

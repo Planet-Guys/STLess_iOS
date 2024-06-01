@@ -9,13 +9,13 @@ import SwiftUI
 import Charts
 
 struct LineChart: View {
-    let items: [DailySDNNInfo]
+    let items: [DailyHRVInfo]
     
     @State private var selectedX = 1
     
     var body: some View {
         Chart(items) { item in
-            LineMark(x: .value("hour", item.date),
+            LineMark(x: .value("day", item.date),
                      y: .value("hrv", item.sdnn))
             .symbol() {
                 Circle()
@@ -33,16 +33,19 @@ struct LineChart: View {
             }
         }
         .chartYScale(domain: 0...125)
-        .chartXScale(domain: xScaleDomain)
         .chartXAxis {
-            AxisMarks(values: stride(from: 0, through: 21, by: 3).map { hour in
-                Calendar.current.date(bySettingHour: hour, minute: 0, second: 0, of: .now)!
-            }) { value in
-                AxisValueLabel(format: .dateTime.hour(.twoDigits(amPM: .omitted)), centered: true)
-                    .foregroundStyle(.black.opacity(0.3))
+            AxisMarks(preset: .aligned, values: .stride(by: .day)) { value in
+                AxisValueLabel(multiLabelAlignment: .center, content: {
+                    Text("zz")
+                        .foregroundStyle(.black)
+                })
+                
+//                AxisValueLabel(
+//                    format: .dateTime.month(.defaultDigits).day(.twoDigits)
+//                )
+//                .foregroundStyle(Color.black.opacity(0.3))
             }
         }
-        .chartScrollableAxes(.horizontal)
         .chartOverlay { proxy in
             //            let pos1 = proxy.position(for: (x: selectedX, y: items[selectedX].hour)) ?? .zero
             //            let pos2 = proxy.position(for: (x: selectedX+1, y: items[selectedX+1].hour)) ?? .zero
@@ -57,17 +60,6 @@ struct LineChart: View {
             //            }
             //            .position(x: (pos1.x + pos2.x)/2, y: lineHeight / 2 )
         }
-        .padding()
-    }
-}
-
-extension LineChart {
-    var xScaleDomain: ClosedRange<Date> {
-        let calendar = Calendar.current
-        let startOfDay = calendar.startOfDay(for: .now)
-        let start = calendar.date(bySettingHour: 0, minute: 0, second: 0, of: startOfDay)!
-        let end = calendar.date(bySettingHour: 21, minute: 0, second: 0, of: startOfDay)!
-        return start...end
     }
 }
 
