@@ -8,7 +8,6 @@
 import SwiftUI
 import ComposableArchitecture
 import Charts
-import TipKit
 
 struct MainView: View {
     var store: StoreOf<MainFeature>
@@ -20,9 +19,11 @@ struct MainView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationStackStore(store.scope(state: \.path,
+                                         action: \.path)) {
             ScrollView {
                 VStack {
+                    topView()
                     headerView()
                     infoView()
                     DividerView(thickness: 10,
@@ -36,7 +37,34 @@ struct MainView: View {
             .onAppear(perform: {
                 store.send(._onAppear)
             })
+        } destination: { store in
+            switch store.state {
+            case .setting(.main):
+                if let store = store.scope(state: \.setting, action: \.setting) {
+                    SettingView(store: store)
+                }
+            case .stressInfo:
+                if let _ = store.scope(state: \.stressInfo, action: \.stressInfo) {
+                    HRVDescriptionView()
+                }
+            }
         }
+    }
+    
+    @ViewBuilder
+    func topView() -> some View {
+        HStack {
+            Image.images(.logo)
+                .resizable()
+                .frame(width: 72, height: 26)
+            Spacer()
+            
+            NavigationLink(state: MainFeature.MainNaviagtionPath.State.setting(.main)) {
+                Image.images(.setting)
+            }
+        }
+        .frame(height: 44)
+        .padding(.horizontal, 20)
     }
     
     @ViewBuilder
@@ -93,12 +121,16 @@ struct MainView: View {
             
             HStack {
                 Spacer()
-                Button {
-                    // TODO: Push
-                } label: {
+                NavigationLink(state: MainFeature.MainNaviagtionPath.State.stressInfo) {
                     Text("잠깐! 심박변이가 뭐에요?")
                         .font(.pdMedium12)
                         .foregroundStyle(Color.black).opacity(0.7)
+                        .underline(color: Color.black.opacity(0.7))
+                }
+                Button {
+                    // TODO: Push
+                } label: {
+                    
                 }
             }
             .padding(.top, 9)

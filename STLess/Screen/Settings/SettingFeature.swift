@@ -16,12 +16,19 @@ struct SettingFeature {
     
     enum Action {
         case main
+        case delegate(Delegate)
+        
+        enum Delegate: Equatable {
+            case back
+        }
     }
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
             case .main:
+                return .none
+            case .delegate(_):
                 return .none
             }
         }

@@ -31,14 +31,13 @@ struct RootFeature {
         Reduce { state, action in
             switch action {
             case .main:
-                
                 return .none
             case .splash(let action):
                 switch action {
                 case ._onAppear:
                     return .run(priority: .userInitiated) { send in
                         try await Task.sleep(for: .seconds(1.5))
-                        await send(._changeScreen(.main(.init())))
+                        await send(._changeScreen(.main(.init())), animation: .spring)
                     }
                 }
             case let ._changeScreen(newState):

@@ -14,6 +14,8 @@ struct MainFeature {
     
     @ObservableState
     struct State: Equatable {
+        var path: StackState<MainNaviagtionPath.State> = .init()
+        
         var stressLevel: StressLevel = .none
         var currentDate: Date = .now
         var recentlyInfoDate: Date = .now
@@ -24,6 +26,8 @@ struct MainFeature {
     }
     
     enum Action {
+        case path(StackAction<MainNaviagtionPath.State, MainNaviagtionPath.Action>)
+        
         case getHRVData
         case hrvDataResponse([DailyHRVInfo])
         case getRecentlyHRV
@@ -35,12 +39,24 @@ struct MainFeature {
         case setStressLevel(StressLevel)
         case _onAppear
     }
-}
-
-extension MainFeature {
+    
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
+            case let .path(action):
+                switch action {
+                case .element(id: _, action: .setting(.main)):
+                    state.path.append(.setting(.main))
+                    return .none
+                case .element(id: _, action: .setting(.delegate(.back))):
+                    let _ = state.path.popLast()
+                    return .none
+                case .element(id: _, action: .stressInfo):
+                    state.path.append(.stressInfo)
+                    return .none
+                default:
+                    return .none
+                }
             case .setDate(let date):
                 state.currentDate = date
                 return .none
@@ -83,6 +99,9 @@ extension MainFeature {
                     await send(.getAverageHRV)
                 }
             }
+        }
+        .forEach(\.path, action: \.path) {
+            MainNaviagtionPath()
         }
     }
 }

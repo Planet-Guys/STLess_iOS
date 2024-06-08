@@ -25,6 +25,8 @@
 		B546E4E42C0B059900FA5AED /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4E32C0B059900FA5AED /* RootView.swift */; };
 		B546E4E62C0B066400FA5AED /* SplashFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4E52C0B066400FA5AED /* SplashFeature.swift */; };
 		B546E4EB2C0B0DFF00FA5AED /* SettingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E4EA2C0B0DFF00FA5AED /* SettingFeature.swift */; };
+		B546E50F2C0B6BEC00FA5AED /* MainFeature+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E50E2C0B6BEC00FA5AED /* MainFeature+Navigation.swift */; };
+		B546E5112C0B728F00FA5AED /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546E5102C0B728F00FA5AED /* SettingView.swift */; };
 		B598EB942BF0F56B00E783DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */; };
 		B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EB952BF0FA2100E783DA /* DividerView.swift */; };
 		B598EB9A2BF0FBC200E783DA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */; };
@@ -101,6 +103,8 @@
 		B546E4E32C0B059900FA5AED /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B546E4E52C0B066400FA5AED /* SplashFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFeature.swift; sourceTree = "<group>"; };
 		B546E4EA2C0B0DFF00FA5AED /* SettingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFeature.swift; sourceTree = "<group>"; };
+		B546E50E2C0B6BEC00FA5AED /* MainFeature+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainFeature+Navigation.swift"; sourceTree = "<group>"; };
+		B546E5102C0B728F00FA5AED /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B598EB952BF0FA2100E783DA /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		B598EB992BF0FBC200E783DA /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		B598EB9C2BF0FBCB00E783DA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
@@ -160,9 +164,9 @@
 		B5003DF92BF0BDE300D1C1A6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B546E4EC2C0B1CA100FA5AED /* New Group */,
 				B5003DFA2BF0BDE800D1C1A6 /* MainView.swift */,
 				B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */,
+				B546E50E2C0B6BEC00FA5AED /* MainFeature+Navigation.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -275,15 +279,9 @@
 			isa = PBXGroup;
 			children = (
 				B546E4EA2C0B0DFF00FA5AED /* SettingFeature.swift */,
+				B546E5102C0B728F00FA5AED /* SettingView.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		B546E4EC2C0B1CA100FA5AED /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		B598EB972BF0FB8E00E783DA /* Resource */ = {
@@ -514,6 +512,7 @@
 				B598EB942BF0F56B00E783DA /* MainView.swift in Sources */,
 				B544335D2BF4C1D000CE532F /* BarChart.swift in Sources */,
 				B546E4DF2C0AF14F00FA5AED /* MainDestination.swift in Sources */,
+				B546E50F2C0B6BEC00FA5AED /* MainFeature+Navigation.swift in Sources */,
 				B544335B2BF4900200CE532F /* DateType.swift in Sources */,
 				B546E4EB2C0B0DFF00FA5AED /* SettingFeature.swift in Sources */,
 				B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */,
@@ -531,6 +530,7 @@
 				B54433652BF4CDD700CE532F /* View+.swift in Sources */,
 				B5BDCAB12BFA68D80097BA96 /* Utils.swift in Sources */,
 				B54433632BF4C96700CE532F /* LineChart.swift in Sources */,
+				B546E5112C0B728F00FA5AED /* SettingView.swift in Sources */,
 				B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */,
 				B5C0CB752C062FF70017BD1B /* Date+.swift in Sources */,
 				B598EB962BF0FA2100E783DA /* DividerView.swift in Sources */,
