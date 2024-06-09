@@ -24,7 +24,7 @@ struct MainView: View {
                 topView()
             } content: {
                 ScrollView {
-                    headerView()
+                    dustInfoView(dust: store.stressLevel)
                     infoView()
                     DividerView(thickness: 10,
                                 padding: .zero)
@@ -69,23 +69,29 @@ struct MainView: View {
     }
     
     @ViewBuilder
-    func headerView() -> some View {
-        store.stressLevel.icon
-            .frame(width: 193, height: 193)
-            .padding(.top, 80)
-            .padding(.bottom, 22)
+    func dustInfoView(dust: StressLevel) -> some View {
+        ZStack(alignment: .topTrailing) {
+            dust.icon
+                .resizable()
+                .frame(width: 193, height: 193)
+            dust.bubble
+                .offset(x: 50, y: -35)
+        }
+        .padding(.top, 80)
+        .padding(.bottom, 22)
         
-        Text(store.stressLevel.title)
+        
+        Text(dust.title)
             .font(.pdBold16)
             .foregroundStyle(Color.black).opacity(0.95)
         
-        Text(store.stressLevel.message)
+        Text(dust.message)
             .font(.pdRegular14)
             .foregroundStyle(Color.black).opacity(0.8)
             .padding(.top, 9)
             .multilineTextAlignment(.center)
         
-        if store.stressLevel == .none {
+        if dust == .none {
             Button {
                 // TODO: 건강앱 권한 셋팅
             } label: {

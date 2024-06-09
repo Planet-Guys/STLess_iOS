@@ -118,19 +118,4 @@ enum StressLevel {
             0...150
         }
     }
-    
-    var comment: String {
-        switch self {
-        case .bad:
-            "아..스트레스"
-        case .caution:
-            "주의가 필요해"
-        case .normal:
-            "괜찮은 하루!"
-        case .good:
-            "최고야!"
-        case .none:
-            ""
-        }
-    }
 }
