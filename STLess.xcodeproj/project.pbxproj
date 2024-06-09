@@ -11,6 +11,12 @@
 		B5003DFC2BF0BDF500D1C1A6 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */; };
 		B5003E012BF0BE2C00D1C1A6 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003E002BF0BE2C00D1C1A6 /* Color+.swift */; };
 		B5003E042BF0BE5B00D1C1A6 /* InfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */; };
+		B52107EB2C1422FA007C370A /* TopNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52107EA2C1422FA007C370A /* TopNavigationBar.swift */; };
+		B52107EE2C1435FA007C370A /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52107ED2C1435FA007C370A /* Array+.swift */; };
+		B52107F62C14406F007C370A /* WithDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52107F52C14406F007C370A /* WithDesignSystem.swift */; };
+		B52107F82C1440CB007C370A /* View+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52107F72C1440CB007C370A /* View+Keyboard.swift */; };
+		B52107FA2C1440F5007C370A /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52107F92C1440F5007C370A /* UIApplication+.swift */; };
+		B52107FC2C1442E6007C370A /* HRVDescriptionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52107FB2C1442E6007C370A /* HRVDescriptionFeature.swift */; };
 		B53217DE2BF9BBBE006C316C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53217DD2BF9BBBE006C316C /* HealthManager.swift */; };
 		B544335B2BF4900200CE532F /* DateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544335A2BF4900200CE532F /* DateType.swift */; };
 		B544335D2BF4C1D000CE532F /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544335C2BF4C1D000CE532F /* BarChart.swift */; };
@@ -88,6 +94,12 @@
 		B5003DFB2BF0BDF500D1C1A6 /* MainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
 		B5003E002BF0BE2C00D1C1A6 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBox.swift; sourceTree = "<group>"; };
+		B52107EA2C1422FA007C370A /* TopNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationBar.swift; sourceTree = "<group>"; };
+		B52107ED2C1435FA007C370A /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		B52107F52C14406F007C370A /* WithDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithDesignSystem.swift; sourceTree = "<group>"; };
+		B52107F72C1440CB007C370A /* View+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Keyboard.swift"; sourceTree = "<group>"; };
+		B52107F92C1440F5007C370A /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		B52107FB2C1442E6007C370A /* HRVDescriptionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVDescriptionFeature.swift; sourceTree = "<group>"; };
 		B53217DD2BF9BBBE006C316C /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		B53217DF2BF9BC46006C316C /* STLess_Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "STLess_Watch App.entitlements"; sourceTree = "<group>"; };
 		B544335A2BF4900200CE532F /* DateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateType.swift; sourceTree = "<group>"; };
@@ -194,13 +206,63 @@
 		B5003E022BF0BE4F00D1C1A6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B5C0CA2E2C04DA400017BD1B /* OverlayToolTip.swift */,
-				B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */,
-				B598EB952BF0FA2100E783DA /* DividerView.swift */,
+				B52107F32C144041007C370A /* BaseView */,
+				B52107F22C144036007C370A /* InfoBox */,
+				B52107F12C14402F007C370A /* ToolTip */,
+				B52107F02C144028007C370A /* Divider */,
+				B52107EF2C14401A007C370A /* Charts */,
+				B52107E92C1422EE007C370A /* Navigation */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B52107E92C1422EE007C370A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B52107EA2C1422FA007C370A /* TopNavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B52107EF2C14401A007C370A /* Charts */ = {
+			isa = PBXGroup;
+			children = (
 				B544335C2BF4C1D000CE532F /* BarChart.swift */,
 				B54433622BF4C96700CE532F /* LineChart.swift */,
 			);
-			path = Components;
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		B52107F02C144028007C370A /* Divider */ = {
+			isa = PBXGroup;
+			children = (
+				B598EB952BF0FA2100E783DA /* DividerView.swift */,
+			);
+			path = Divider;
+			sourceTree = "<group>";
+		};
+		B52107F12C14402F007C370A /* ToolTip */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0CA2E2C04DA400017BD1B /* OverlayToolTip.swift */,
+			);
+			path = ToolTip;
+			sourceTree = "<group>";
+		};
+		B52107F22C144036007C370A /* InfoBox */ = {
+			isa = PBXGroup;
+			children = (
+				B5003E032BF0BE5B00D1C1A6 /* InfoBox.swift */,
+			);
+			path = InfoBox;
+			sourceTree = "<group>";
+		};
+		B52107F32C144041007C370A /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				B52107F52C14406F007C370A /* WithDesignSystem.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		B53217DC2BF9BBB6006C316C /* Core */ = {
@@ -319,6 +381,8 @@
 				B5C0CA1C2C03A0120017BD1B /* Double+.swift */,
 				B5C0CA1E2C03A26A0017BD1B /* Image+.swift */,
 				B5C0CB742C062FF70017BD1B /* Date+.swift */,
+				B52107F72C1440CB007C370A /* View+Keyboard.swift */,
+				B52107F92C1440F5007C370A /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				B5C0CA2C2C04CA4B0017BD1B /* HRVDescriptionView.swift */,
+				B52107FB2C1442E6007C370A /* HRVDescriptionFeature.swift */,
 			);
 			path = Description;
 			sourceTree = "<group>";
@@ -334,6 +399,7 @@
 		B5EDF1D82BD517610094CB59 = {
 			isa = PBXGroup;
 			children = (
+				B52107ED2C1435FA007C370A /* Array+.swift */,
 				B5EDF1E32BD517610094CB59 /* STLess */,
 				B5EDF2052BD518DA0094CB59 /* STLess_Watch App */,
 				B5EDF1F32BD517A40094CB59 /* README.md */,
@@ -510,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B598EB942BF0F56B00E783DA /* MainView.swift in Sources */,
+				B52107EB2C1422FA007C370A /* TopNavigationBar.swift in Sources */,
 				B544335D2BF4C1D000CE532F /* BarChart.swift in Sources */,
 				B546E4DF2C0AF14F00FA5AED /* MainDestination.swift in Sources */,
 				B546E50F2C0B6BEC00FA5AED /* MainFeature+Navigation.swift in Sources */,
@@ -517,10 +584,12 @@
 				B546E4EB2C0B0DFF00FA5AED /* SettingFeature.swift in Sources */,
 				B598EBA72BF0FC6D00E783DA /* Font+.swift in Sources */,
 				B546E4DD2C0AF0CA00FA5AED /* RootFeature.swift in Sources */,
+				B52107F82C1440CB007C370A /* View+Keyboard.swift in Sources */,
 				B546E4E42C0B059900FA5AED /* RootView.swift in Sources */,
 				B544335F2BF4C1F100CE532F /* HrvData.swift in Sources */,
 				B5003E012BF0BE2C00D1C1A6 /* Color+.swift in Sources */,
 				B546E4E62C0B066400FA5AED /* SplashFeature.swift in Sources */,
+				B52107FA2C1440F5007C370A /* UIApplication+.swift in Sources */,
 				B5C0CA2F2C04DA400017BD1B /* OverlayToolTip.swift in Sources */,
 				B54433612BF4C3D600CE532F /* UISegment.swift in Sources */,
 				B5C0CB732C062ED00017BD1B /* DateFormat.swift in Sources */,
@@ -528,6 +597,7 @@
 				B5C0CA2D2C04CA4B0017BD1B /* HRVDescriptionView.swift in Sources */,
 				B546E4E22C0AF25500FA5AED /* SplashView.swift in Sources */,
 				B54433652BF4CDD700CE532F /* View+.swift in Sources */,
+				B52107F62C14406F007C370A /* WithDesignSystem.swift in Sources */,
 				B5BDCAB12BFA68D80097BA96 /* Utils.swift in Sources */,
 				B54433632BF4C96700CE532F /* LineChart.swift in Sources */,
 				B546E5112C0B728F00FA5AED /* SettingView.swift in Sources */,
@@ -539,9 +609,11 @@
 				B5BDCAAD2BFA16FA0097BA96 /* Date+Format.swift in Sources */,
 				B5C0CA1D2C03A0120017BD1B /* Double+.swift in Sources */,
 				B5EDF1E52BD517610094CB59 /* STLessApp.swift in Sources */,
+				B52107FC2C1442E6007C370A /* HRVDescriptionFeature.swift in Sources */,
 				B5C0CA1F2C03A26A0017BD1B /* Image+.swift in Sources */,
 				B5C0CA1B2C039D8F0017BD1B /* StressLevel.swift in Sources */,
 				B53217DE2BF9BBBE006C316C /* HealthManager.swift in Sources */,
+				B52107EE2C1435FA007C370A /* Array+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,8 +51,11 @@ struct MainFeature {
                 case .element(id: _, action: .setting(.delegate(.back))):
                     let _ = state.path.popLast()
                     return .none
-                case .element(id: _, action: .stressInfo):
-                    state.path.append(.stressInfo)
+                case .element(id: _, action: .stressInfo(.main)):
+                    state.path.append(.stressInfo(.main))
+                    return .none
+                case .element(id: _, action: .stressInfo(.delegate(.back))):
+                    let _ = state.path.popLast()
                     return .none
                 default:
                     return .none

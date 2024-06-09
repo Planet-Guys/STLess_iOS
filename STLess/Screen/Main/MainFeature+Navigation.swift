@@ -13,17 +13,20 @@ extension MainFeature {
         @ObservableState
         enum State: Equatable {
             case setting(SettingFeature.State)
-            case stressInfo
+            case stressInfo(HRVDescriptionFeature.State)
         }
         
         enum Action {
             case setting(SettingFeature.Action)
-            case stressInfo
+            case stressInfo(HRVDescriptionFeature.Action)
         }
         
         var body: some Reducer<State, Action> {
             Scope(state: \.setting, action: \.setting, child: {
                 SettingFeature()
+            })
+            Scope(state: \.stressInfo, action: \.stressInfo, child: {
+                HRVDescriptionFeature()
             })
         }
         
@@ -31,7 +34,6 @@ extension MainFeature {
             Reduce { state, action in
                 switch action {
                 default:
-                    print("ss")
                     return .none
                 }
             }

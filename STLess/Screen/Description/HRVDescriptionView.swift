@@ -6,20 +6,29 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct HRVDescriptionView: View {
+    var store: StoreOf<HRVDescriptionFeature>
     
     var body: some View {
-        ScrollView {
-            descriptionView()
-                .padding(.top, 30)
-            legendListView()
-                .padding(.top, 20)
-            bottomInfoView()
-                .padding(.top, 100)
+        WithDesignSystem {
+            TopNavigationBar(leadingItem: (Image.images(.back),
+                                           nil, {
+                store.send(.delegate(.back))
+            }))
+        } content: {
+            ScrollView {
+                descriptionView()
+                    .padding(.top, 30)
+                legendListView()
+                    .padding(.top, 20)
+                bottomInfoView()
+                    .padding(.top, 100)
+            }
+            .padding(.horizontal, 20)
+            .background(Color.white)
         }
-        .padding(.horizontal, 20)
-        .background(Color.white)
     }
     
     @ViewBuilder
@@ -88,5 +97,7 @@ struct HRVDescriptionView: View {
 }
 
 #Preview {
-    HRVDescriptionView()
+    HRVDescriptionView(store: Store(initialState: HRVDescriptionFeature.State.main, reducer: {
+        HRVDescriptionFeature()
+    }))
 }

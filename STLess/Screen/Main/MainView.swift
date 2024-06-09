@@ -19,11 +19,11 @@ struct MainView: View {
     }
     
     var body: some View {
-        NavigationStackStore(store.scope(state: \.path,
-                                         action: \.path)) {
-            ScrollView {
-                VStack {
-                    topView()
+        NavigationStackStore(store.scope(state: \.path, action: \.path)) {
+            WithDesignSystem {
+                topView()
+            } content: {
+                ScrollView {
                     headerView()
                     infoView()
                     DividerView(thickness: 10,
@@ -33,6 +33,7 @@ struct MainView: View {
                     hrvView()
                 }
             }
+            
             .background(Color.white)
             .onAppear(perform: {
                 store.send(._onAppear)
@@ -43,9 +44,9 @@ struct MainView: View {
                 if let store = store.scope(state: \.setting, action: \.setting) {
                     SettingView(store: store)
                 }
-            case .stressInfo:
-                if let _ = store.scope(state: \.stressInfo, action: \.stressInfo) {
-                    HRVDescriptionView()
+            case .stressInfo(.main):
+                if let store = store.scope(state: \.stressInfo, action: \.stressInfo) {
+                    HRVDescriptionView(store: store)
                 }
             }
         }
@@ -121,7 +122,7 @@ struct MainView: View {
             
             HStack {
                 Spacer()
-                NavigationLink(state: MainFeature.MainNaviagtionPath.State.stressInfo) {
+                NavigationLink(state: MainFeature.MainNaviagtionPath.State.stressInfo(.main)) {
                     Text("잠깐! 심박변이가 뭐에요?")
                         .font(.pdMedium12)
                         .foregroundStyle(Color.black).opacity(0.7)
