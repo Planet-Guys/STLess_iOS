@@ -376,6 +376,7 @@
 		B5BDCAAB2BFA16F30097BA96 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B52107ED2C1435FA007C370A /* Array+.swift */,
 				B5BDCAAC2BFA16FA0097BA96 /* Date+Format.swift */,
 				B5BDCAB02BFA68D80097BA96 /* Utils.swift */,
 				B5C0CA1C2C03A0120017BD1B /* Double+.swift */,
@@ -399,7 +400,6 @@
 		B5EDF1D82BD517610094CB59 = {
 			isa = PBXGroup;
 			children = (
-				B52107ED2C1435FA007C370A /* Array+.swift */,
 				B5EDF1E32BD517610094CB59 /* STLess */,
 				B5EDF2052BD518DA0094CB59 /* STLess_Watch App */,
 				B5EDF1F32BD517A40094CB59 /* README.md */,

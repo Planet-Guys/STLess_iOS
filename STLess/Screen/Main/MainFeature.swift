@@ -10,7 +10,7 @@ import HealthKit
 
 @Reducer
 struct MainFeature {
-    let healthManager = HealthManager.share
+    let healthManager = HealthManager.share // dependency로 빼기
     
     @ObservableState
     struct State: Equatable {

@@ -44,6 +44,36 @@ enum StressLevel {
         }
     }
     
+    var bubble: Image {
+        switch self {
+        case .bad:
+            return .images(.badCommentBubble)
+        case .caution:
+            return .images(.cautionCommentBubble)
+        case .normal:
+            return .images(.normalCommentBubble)
+        case .good:
+            return .images(.goodCommentBubble)
+        case .none:
+            return .images(.noneCommentBubble)
+        }
+    }
+    
+    var comment: Image {
+        switch self {
+        case .bad:
+            return .images(.badComment)
+        case .caution:
+            return .images(.cautionComment)
+        case .normal:
+            return .images(.normalComment)
+        case .good:
+            return .images(.goodComment)
+        case .none:
+            return .images(.badDust)
+        }
+    }
+    
     var title: String {
         switch self {
         case .bad:
